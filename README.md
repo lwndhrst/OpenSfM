@@ -5,7 +5,7 @@ OpenSfM
 ## Setup on WSL 2
 
 - Distribution: Ubuntu 24.04
-- 
+
 ### Install Dependencies
 
 ```
