@@ -14,7 +14,7 @@ sudo apt update && sudo apt install -y build-essential cmake git libeigen3-dev l
 
 ### Install Miniconda
 ```
-bash <(curl -s [http://mywebsite.example/myscript.txt](https://repo.anaconda.com/miniconda/Miniconda3-py312_26.1.1-1-Linux-x86_64.sh))
+bash <(curl -s https://repo.anaconda.com/miniconda/Miniconda3-py312_26.1.1-1-Linux-x86_64.sh)
 ```
 
 ### Setup OpenSfM
