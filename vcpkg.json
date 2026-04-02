@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "dependencies": [
+    "opencv4",
+    {
+      "name": "ceres",
+      "features": [
+        "suitesparse"
+      ]
+    },
+    "lapack",
+    "suitesparse"
+  ],
+  "builtin-baseline": "50309c8a89285da41c3f4e582af3b1722b33a9c5",
+  "overrides": [
+    {
+      "name": "glog",
+      "version": "0.3.5"
+    }
+  ]
+}

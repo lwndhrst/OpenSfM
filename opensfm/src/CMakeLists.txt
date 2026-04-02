@@ -133,10 +133,12 @@ if (OPENSFM_BUILD_TESTS)
   add_definitions(-DCERES_GFLAGS_NAMESPACE=${GFLAGS_NAMESPACE})
 
   # Gtest if old now and trigger these
+  if(NOT WIN32)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-missing-field-initializers")
   set(CMAKE_CXX_FLAGS
       "${CMAKE_CXX_FLAGS} -Wno-deprecated-copy-with-user-provided-copy"
   )
+  endif()
 
   add_library(gtest
               third_party/gtest/gmock_gtest_all.cc

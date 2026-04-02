@@ -37,7 +37,10 @@ def configure_c_extension():
     ]
     if sys.platform == "win32":
         cmake_command += [
+            "-DVCPKG_MANIFEST_MODE=ON",
+            "-DVCPKG_MANIFEST_DIR=../",
             "-DVCPKG_TARGET_TRIPLET=x64-windows",
+            "-DOPENSFM_BUILD_TESTS=OFF",
             "-DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake",
         ]
     subprocess.check_call(cmake_command, cwd="cmake_build")

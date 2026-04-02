@@ -19,6 +19,10 @@ uv.lock
 .pytest_cache
 eval
 
+# Ignore generated files from vcpkg
+/opensfm/*.dll
+/opensfm/*.pyd
+
 # Viewer
 node_modules
 
