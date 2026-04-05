@@ -1,6 +1,7 @@
 name: opensfm
 dependencies:
-  - python=3.10
+  # - python=3.10
+  - python=3.12
   - cmake=3.31
   - pip
   - pip:
@@ -12,7 +13,8 @@ dependencies:
     - matplotlib
     - networkx>=2.5
     - numpy>=1.19
-    - pillow>=8.1.1
+    # - pillow>=8.1.1
+    - pillow==12.1.1
     - pyproj>=1.9.5.1
     - pytest>=3.0.7
     - python-dateutil>=2.7
